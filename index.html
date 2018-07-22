@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Flipping Card Game</title>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+    
+    </head>
+    <body>
+<div id="gameHeader">
+  <h1>Memory Game</h1>
+  <data>Moves: <span id="trickCounterData"></span></data>
+</div>
+        
+<div id="chooseLevelScreen">
+  <div id="levelText">
+    <h2>Choose level</h2>
+    <p><button id="btnLevel1">1</button></p>
+    <p><button id="btnLevel2">2</button></p>
+    <p><button id="btnLevel3">3</button></p>
+  </div>
+</div>
+<div id="gameScreen" class="visibilityH">
+  <div id="cardsContainer">
+
+  </div>
+  <div id="navBar">
+    <button>Choose level</button>
+  </div>
+</div>
+<div id="animationScreen" class="displayNone">
+  <div id="animationContainer">
+    <div id="animateText" class="animated">
+      <p>Hurray!! You Won</p>
+    </div>
+    <div id="animateFireworks" class="animated">
+      <div id="animateFireworksRotate">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst2.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst2.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst2.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst2.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst2.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst.svg" class="rotating">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/burst2.svg" class="rotating">
+      </div>
+    </div>
+  </div>
+  <div>
+    <button>Play Again</button>
+  </div>
+</div>
+<div id="audioTags">
+  <audio id="multiaudio1">
+    		<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/bubble.wav">
+    		Your browser does not support the audio tag.
+  </audio>
+  <audio id="multiaudio2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/flipcard.wav"></audio>
+  <audio id="multiaudio3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/applause.wav"></audio>
+</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/designs.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    </body>
+</html>
